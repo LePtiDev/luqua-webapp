@@ -1,15 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import home from '@/app-modules/home/pages/index.vue'
+import { AuthRoutes } from '~/app-modules/auth/router'
+import { DashboardRoutes } from '~/app-modules/dashboard/router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: home
-    }
-  ]
+  routes: [...AuthRoutes, ...DashboardRoutes]
 })
 
 export default router

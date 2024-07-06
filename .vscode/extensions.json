@@ -1,3 +1,5 @@
 {
-  "recommendations": ["denoland.vscode-deno", "vue.volar"]
+  "recommendations": [
+    "denoland.vscode-deno"
+  ]
 }
